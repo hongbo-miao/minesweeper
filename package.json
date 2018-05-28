@@ -25,12 +25,12 @@
     "redux-observable": "0.18.0",
     "redux-persist": "5.9.1",
     "reselect": "3.0.1",
-    "rxjs": "5.5.10",
-    "why-did-you-update": "0.1.1"
+    "rxjs": "5.5.10"
   },
   "devDependencies": {
     "redux-devtools-extension": "2.13.2",
-    "redux-logger": "3.0.6"
+    "redux-logger": "3.0.6",
+    "why-did-you-update": "0.1.1"
   },
   "scripts": {
     "start": "react-scripts start",

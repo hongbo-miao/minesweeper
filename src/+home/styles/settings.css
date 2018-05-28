@@ -1,0 +1,31 @@
+.my-settings {
+  cursor: pointer;
+  display: flex;
+  margin-left: 1rem;
+  color: #9a9a9a;
+}
+.my-settings:hover {
+  color: #658eff;
+}
+
+.my-settings-popover {
+  padding: 1rem 1rem 0 1rem;
+}
+.my-settings-popover .my-label {
+  color: #b3b3b3;
+  font-size: .8rem;
+}
+.my-settings-popover .my-field {
+  border: 1px solid #f9f9f9;
+  background: #f9f9f9;
+  border-radius: .5rem;
+  width: 100%;
+}
+.my-settings-popover .my-field.my-invalid {
+  border: 1px solid #ff6565;
+}
+
+.my-settings-popover .my-divider {
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, .05);
+}

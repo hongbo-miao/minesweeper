@@ -1,0 +1,42 @@
+.my-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 20rem;
+}
+
+.my-header .my-restart {
+
+}
+.my-header .my-restart .my-restart-button {
+  margin: 0 .25rem;
+  z-index: 1;
+  padding-top: .2rem;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 1.25rem;
+  font-size: .8rem;
+  display: inline-block;
+  background: #658eff;
+  border: 2px solid #658eff;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  transition: .2s;
+  text-align: center;
+}
+.my-header .my-restart .my-restart-button:hover {
+  color: #658eff;
+  background: #fff;
+}
+
+.my-header .my-title {
+  display: flex;
+}
+.my-header .my-title .my-player {
+  font-size: 1.3rem;
+  margin-right: .5rem;
+}
+.my-header .my-title .my-game-status {
+  font-size: 1.3rem;
+}

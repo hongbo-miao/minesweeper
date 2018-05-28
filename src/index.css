@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400');
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100%;
+}
+
+html, body {
+  font-family: Roboto, Calibri, sans-serif;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* overwrite popover */
+.popover {
+  max-width: initial;
+  font-family: Roboto, Calibri, sans-serif;
+  box-shadow: 0 5px 20px 0 rgba(126, 137, 140, .2);
+  border-color: rgba(0, 0, 0, .05);
+}
+.popover .popover-body {
+  padding: 0;
+}
+.popover .arrow {
+  /*display: none;*/
+}
+.popover.my-settings-popover .arrow::before {
+  border-right-color: rgba(0, 0, 0, .05);
+}

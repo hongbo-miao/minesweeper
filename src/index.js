@@ -9,8 +9,8 @@ import { createStore, applyMiddleware } from 'redux';
 import { createEpicMiddleware } from 'redux-observable';
 import { persistStore, persistReducer } from 'redux-persist';
 import { PersistGate } from 'redux-persist/es/integration/react';
-import { composeWithDevTools } from 'redux-devtools-extension';
-import { createLogger } from 'redux-logger';
+// import { composeWithDevTools } from 'redux-devtools-extension';
+// import { createLogger } from 'redux-logger';
 // import { whyDidYouUpdate } from 'why-did-you-update';
 
 import registerServiceWorker from './registerServiceWorker';
@@ -39,12 +39,12 @@ let middlewares = [
   epicMiddleware
 ];
 
-// debug
-const logger = createLogger({
-  collapsed: true,
-  diff: true
-});
-middlewares = [...middlewares, logger];
+// // debug log
+// const logger = createLogger({
+//   collapsed: true,
+//   diff: true
+// });
+// middlewares = [...middlewares, logger];
 
 // whyDidYouUpdate(React);
 
@@ -66,10 +66,10 @@ const reducer = persistReducer(config, rootReducer);
 export const store = createStore(
   reducer,
 
-  // debug
-  composeWithDevTools(
+  // // debug log
+  // composeWithDevTools(
     applyMiddleware(...middlewares)
-  )
+  // )
 );
 
 const persistor = persistStore(store);

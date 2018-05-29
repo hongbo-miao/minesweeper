@@ -3,7 +3,7 @@
 ## Install
 ```bash
 npm install
-npm run
+npm start
 ```
 
 ## Features
